@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+Disallow: /admin/*
+Disallow: /login/
+
+
+Sitemap: https://disoveringbrands.com/sitemap.xml
+Sitemap: https://disoveringbrands.com/sitemap-brand.xml
+Sitemap: https://disoveringbrands.com/sitemap-blog.xml
+Sitemap: https://disoveringbrands.com/sitemap-category.xml
+Sitemap: https://disoveringbrands.com/sitemap-blog-category.xml

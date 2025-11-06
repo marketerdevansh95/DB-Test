@@ -1,0 +1,85 @@
+.header-search-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-search-wrapper input {
+  background: #fff;
+  color: #000;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 37px;
+  font-size: 0.8rem;
+  padding: 10px 10px 10px 40px;
+  position: relative;
+  width: 400px;
+}
+
+.header-search-wrapper .search-icon {
+  position: absolute;
+  left: 2%;
+  margin: 0;
+}
+
+.header-search-wrapper .close-icon {
+  position: absolute;
+  top: -50%;
+  right: 0%;
+  padding: 0 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.header-search-wrapper.show .close-icon {
+  display: block;
+}
+
+.header-search-wrapper.show input {
+  border-radius: 5px 5px 0 0;
+}
+
+.header-search-wrapper .show-content {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  left: 0;
+  z-index: 1;
+}
+
+.header-search-wrapper .show-content p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #505050;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.header-search-wrapper .show-content ul {
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.header-search-wrapper .show-content.show {
+  height: auto;
+  border-radius: 0 0 10px 10px;
+  gap: 10px;
+  transition: height 5s ease-in-out;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.header-search-wrapper .show-content.show ul {
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.header-search-wrapper ul li {
+  width: fit-content;
+  height: auto;
+  background: #f8f0ea;
+  border: 1px solid #f8f0ea;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #7a7a7a;
+}

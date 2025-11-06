@@ -1,0 +1,115 @@
+.sub-wrapper {
+  width: fit-content;
+  margin: 5% auto;
+  padding: 4rem;
+  border-left: 8px dotted #000;
+  border-right: 8px dotted #000;
+  border-top: 10px solid #000;
+  border-bottom: 3px solid #000;
+  border-radius: 100px;
+}
+.sub-wrapper .heading {
+  flex-direction: column;
+}
+.sub-list {
+  padding-left: 2rem;
+}
+
+.sub-list ul {
+  display: flex;
+  font-size: 24px;
+  gap: 62px;
+}
+.sub-form {
+  /* padding: 1% 2%;
+  display: flex;
+  gap: 40px;
+  position: relative; */
+}
+.sub-form input,
+.sub-form textarea {
+  font-size: 21px;
+  padding: 10px 20px;
+  background-color: #fff;
+  width: 500px;
+  color: #000;
+  border: 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.sub-form input:focus,
+.sub-form textarea:focus {
+  outline: none;
+}
+
+.sub-form textarea {
+  margin-top: 2rem;
+  width: 100%;
+}
+.sub-form button {
+  padding: 10px 20px;
+  font-size: 21px;
+  color: #fff;
+  background: #000;
+  border: none;
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.sub-wrapper.thanks {
+  text-align: center;
+}
+
+.sub-wrapper.thanks p:first-of-type {
+  font-size: 42px;
+}
+
+.sub-form .error {
+  position: absolute;
+  bottom: -25%;
+  color: red;
+  margin: 0;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .sub-list ul {
+    flex-wrap: wrap;
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 5px;
+    flex-direction: column;
+    font-weight: 600;
+  }
+  .sub-list {
+    padding-left: 0;
+  }
+  .sub-form {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .sub-form input,
+  .sub-form button {
+    width: 100%;
+  }
+  .sub-form input {
+    font-size: 16px;
+  }
+  .sub-wrapper {
+    padding: 3rem 1rem;
+    border-radius: 40px;
+    margin: 1rem;
+  }
+  .sub-wrapper .heading h2 {
+    font-size: 3rem;
+  }
+  .sub-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
