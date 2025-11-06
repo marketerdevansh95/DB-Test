@@ -1,6 +1,6 @@
 import DataCardComponent from "@/FCOMPS/DataCardComponent";
 import FAQs from "@/FCOMPS/FAQs";
-import HomeSection1 from "@/FCOMPS/HomeSection1";
+import HeroBanner from "@/FCOMPS/HeroBanner";
 import Subscriber from "@/FCOMPS/Subscriber";
 import USPSection from "@/FCOMPS/USPSection";
 import { getHomeMetaData } from "@/functions/meta-functions";
@@ -67,7 +67,7 @@ export default async function Home() {
   const test = JSON.stringify(test_data);
   return (
     <>
-      <HomeSection1 />
+      <HeroBanner />
       <DataCardComponent
         title="Trending Brands"
         cta_text="View All"
