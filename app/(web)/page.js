@@ -1,6 +1,8 @@
 import DataCardComponent from "@/FCOMPS/DataCardComponent";
 import FAQs from "@/FCOMPS/FAQs";
+import FeaturedBrandSpotlight from "@/FCOMPS/FeaturedBrandSpotlight";
 import HeroBanner from "@/FCOMPS/HeroBanner";
+import HomeSection1 from "@/FCOMPS/HomeSection1";
 import Subscriber from "@/FCOMPS/Subscriber";
 import USPSection from "@/FCOMPS/USPSection";
 import { getHomeMetaData } from "@/functions/meta-functions";
@@ -88,6 +90,7 @@ export default async function Home() {
         content="Join our D2C brands list and showcase your products directly to engaged buyers visiting our homepage."
         layout={3}
       />
+      <FeaturedBrandSpotlight />
       <DataCardComponent
         title="Trending Category"
         cta_text="View All"

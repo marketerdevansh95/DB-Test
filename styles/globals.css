@@ -1109,6 +1109,211 @@ th, td {
   font-size: larger;
 }
 
+/* Featured Brand Spotlight Styles */
+.featured-brand-spotlight {
+  width: 90%;
+  margin: 3% auto 0;
+  padding: 40px 0;
+}
+
+.spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.spotlight-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.spotlight-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.spotlight-img:hover {
+  transform: scale(1.03);
+}
+
+.spotlight-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brand-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #22181C 0%, #3a282f 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+.spotlight-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #22181C;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.brand-subheading {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+}
+
+.brand-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+}
+
+.brand-info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 20px 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #22181C;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #22181C 0%, #3a282f 100%);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(34, 24, 28, 0.3);
+  align-self: flex-start;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(34, 24, 28, 0.4);
+  background: linear-gradient(135deg, #3a282f 0%, #22181C 100%);
+}
+
+.cta-icon {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .cta-icon {
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .featured-brand-spotlight {
+    width: 95%;
+    padding: 20px 0;
+  }
+
+  .spotlight-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 25px;
+  }
+
+  .spotlight-heading {
+    font-size: 24px;
+  }
+
+  .brand-name {
+    font-size: 22px;
+  }
+
+  .brand-subheading {
+    font-size: 16px;
+  }
+
+  .brand-description {
+    font-size: 15px;
+  }
+
+  .brand-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info-box {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .cta-button {
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+}
+
 /* Hero Banner Styles */
 .hero-banner {
   background-color: #22181C;
