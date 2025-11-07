@@ -74,7 +74,7 @@ export default async function Home() {
         cta_url="/brands"
         slug="brand"
         data={test}
-        content="Discover and shop top D2C brands across skincare, clothing, gifting, home appliances, and baby care products. Explore curated collections, unique offerings, and high-quality products from homegrown D2C brands, all in one place."
+        content="Discover and shop best direct-to-consumer (D2C) brands in India across skincare, clothing, gifting, home appliances, baby care, and more. Explore handpicked collections featuring high-quality, innovative, and unique products from trusted homegrown D2C brands. Enjoy a seamless, all-in-one platform that empowers you to compare, discover, and buy top-rated brands, exclusive launches, and trending offerings—making it easy to find perfect products for any need, occasion, or lifestyle."
         layout={1}
       />
       <BrandListingButton />

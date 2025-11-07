@@ -1036,37 +1036,65 @@ th, td {
 
 
 .brand-listing-button {
-  padding: 12px 35px;
-  background-color: #23181C;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #22181C 0%, #3a282f 100%);
   color: #fff;
   font-size: 18px;
+  font-weight: 600;
   border: none;
-  border-radius: 40px;
+  border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 4px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: inline-block;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(34, 24, 28, 0.3);
+  position: relative;
+  overflow: hidden;
 }
+
+.brand-listing-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.brand-listing-button:hover::before {
+  left: 100%;
+}
+
+.brand-listing-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(34, 24, 28, 0.4);
+  background: linear-gradient(135deg, #3a282f 0%, #22181C 100%);
+}
+
 @media screen and (max-width: 768px) {
-  .brand-listing-button{
-    font-size: 14px;
+  .brand-listing-button {
+    font-size: 16px;
+    padding: 14px 32px;
   }
 }
-.brand-listing-button:hover {
-  background-color: #3a282f;
-  transform: scale(1.05);
+
+.brand-listing-subtitle {
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .brand-listing-button-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-
 }
 
 .brand-listing-button-wrapper p {

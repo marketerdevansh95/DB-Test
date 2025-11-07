@@ -6,10 +6,31 @@
   flex-direction: column;
 }
 
+.data-section-wrapper > .heading {
+  margin-bottom: 35px;
+}
+
+.data-section-wrapper > .data-content {
+  margin-bottom: 35px;
+}
+
+.data-section-wrapper > .layout-1,
+.data-section-wrapper > .layout-2,
+.data-section-wrapper > .layout-3,
+.data-section-wrapper > .layout-4,
+.data-section-wrapper > .layout-5,
+.data-section-wrapper > .layout-6 {
+  margin-bottom: 35px;
+}
+
 .data-content {
   font-size: 18px;
   padding: 0 2%;
   margin: 0;
+}
+
+.data-section-wrapper > .data-content {
+  margin-bottom: 35px;
 }
 
 .heading {
@@ -20,12 +41,29 @@
   margin-bottom: 15px;
   align-items: center;
 }
+
+.data-section-wrapper > .heading {
+  margin-bottom: 35px;
+}
 .heading h2 {
   font-size: 39px;
   color: #000;
 }
 .heading a {
   font-size: 24px;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.heading a:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Layouts CSS */
@@ -280,6 +318,19 @@
   .heading a {
     font-size: 18px;
     line-height: 36px;
+    border: 1px solid #000;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .heading a:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .layout-1,
   .layout-2 {
